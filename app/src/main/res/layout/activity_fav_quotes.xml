@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".show_favorite_quotes.ShowFavoritesBooks">
+    tools:context=".show_favorite_quotes.FavQuotesActivity">
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/appBarQuote"
@@ -25,16 +25,17 @@
         android:layout_height="wrap_content"
         android:text="@string/addQuoteFav"
         android:textColor="@color/black"
-        app:layout_constraintBottom_toTopOf="@+id/addQuoteFav"
+        app:layout_constraintBottom_toTopOf="@+id/btnAddQuoteFav"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/appBarQuote" />
 
     <ImageView
-        android:id="@+id/addQuoteFav"
+        android:id="@+id/btnAddQuoteFav"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="32dp"
+        android:contentDescription="@null"
         android:layout_marginBottom="32dp"
         android:src="@drawable/ic_add_quote_fav"
         app:layout_constraintBottom_toBottomOf="parent"
