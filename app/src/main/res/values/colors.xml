@@ -10,5 +10,8 @@
 
     <color name="blueDark">#042326</color>
     <color name="blueLight">#0A3A40</color>
+    <color name="greenBlueDark">#0F5959</color>
+    <color name="greenBlueLight">#1D7373</color>
+    <color name="grayLight">#F2F2F2</color>
 
 </resources>

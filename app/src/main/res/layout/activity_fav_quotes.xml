@@ -6,18 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".show_favorite_quotes.FavQuotesActivity">
 
-    <com.google.android.material.appbar.MaterialToolbar
-        android:id="@+id/appBarQuote"
-        style="@style/AppBarsStyle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:navigationIcon="@drawable/ic_heart_favorite"
-        app:subtitle="@string/subTitleQuoteActivity"
-        app:title="@string/titleQuoteActivity" />
-
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnAddQuotes"
         style="@style/Widget.MaterialComponents.Button.TextButton"
@@ -28,7 +16,7 @@
         app:layout_constraintBottom_toTopOf="@+id/btnAddQuoteFav"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/appBarQuote" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/btnAddQuoteFav"

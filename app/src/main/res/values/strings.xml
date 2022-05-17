@@ -4,5 +4,7 @@
     <string name="titleQuoteActivity">CITAS DE LIBROS</string>
     <string name="subTitleQuoteActivity">Tus favoritos</string>
     <string name="addQuoteFav">No tienes citas favoritas, desea agregar una nueva favorita</string>
+    <string name="allQuotesTxt">Mostrar todo</string>
+    <string name="favQuotesTxt">Mostrar favoritos</string>
 
 </resources>
