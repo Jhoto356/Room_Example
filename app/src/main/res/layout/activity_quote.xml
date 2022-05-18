@@ -15,25 +15,31 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:navigationIcon="@drawable/ic_heart_favorite"
-        tools:subtitle="@string/subTitleQuoteActivity"
-        app:title="@string/titleQuoteActivity" />
+        app:title="@string/titleQuoteActivity"
+        tools:subtitle="@string/subTitleQuoteActivity"/>
 
-    <androidx.core.widget.NestedScrollView
-        android:id="@+id/scrollQuotes"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+    <ImageView
+        android:id="@+id/btnAddQuoteFav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_add_quote_fav"
+        app:layout_constraintBottom_toBottomOf="@+id/appBarQuote"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAddQuotes"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/addQuoteFav"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/btmNavQuote"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/appBarQuote">
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/containerFragment"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    </androidx.core.widget.NestedScrollView>
+        app:layout_constraintTop_toBottomOf="@id/appBarQuote" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/btmNavQuote"
